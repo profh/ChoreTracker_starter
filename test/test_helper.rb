@@ -19,4 +19,4 @@ class ActiveSupport::TestCase
 end
 
 # Formatting test output a litte nicer
-Turn.config.format = :outline
+# Turn.config.format = :outline
