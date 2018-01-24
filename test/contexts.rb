@@ -33,8 +33,8 @@ module Contexts
     @ac2 = FactoryGirl.create(:chore, child: @alex, task: @sweep, due_on: 2.days.from_now.to_date)
     @mc2 = FactoryGirl.create(:chore, child: @mark, task: @dishes, due_on: 2.days.from_now.to_date)
     @ac3 = FactoryGirl.create(:chore, child: @alex, task: @shovel, due_on: 2.days.ago.to_date, completed: true)
-    @ac4 = FactoryGirl.create(:chore, child: @alex, task: @dishes, due_on: Date.today, completed: true)
-    @mc3 = FactoryGirl.create(:chore, child: @mark, task: @sweep, due_on: Date.today, completed: true)
+    @ac4 = FactoryGirl.create(:chore, child: @alex, task: @dishes, due_on: Date.current, completed: true)
+    @mc3 = FactoryGirl.create(:chore, child: @mark, task: @sweep, due_on: Date.current, completed: true)
   end
   
   def destroy_chores
